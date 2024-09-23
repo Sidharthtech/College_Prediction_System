@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form action="marks.html" method="get">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Username(user)" required >
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password(pass)" required>
+
             <button type="submit">Login</button>
         </form>
+        <div class="feedback-message" id="login-feedback-message"></div>
     </div>
+
+    <script src="login.js"></script>
 </body>
 </html>
