@@ -10,12 +10,21 @@
     <div class="container">
         <h2>Login</h2>
         <form id="login-form">
+            <div class="l">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username(user)" required >
+            </div>
+            <div class="l">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" placeholder="Username(user)" required >
 
+            </div>
+            <div class="l">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Password(pass)" required>
 
+            </div>
+            
             <button type="submit">Login</button>
         </form>
         <div class="feedback-message" id="login-feedback-message"></div>
